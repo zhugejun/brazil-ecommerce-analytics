@@ -11,12 +11,12 @@ prediction model on top.
 
 ## Dataset
 
-[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-— ~100k orders (2016–2018) across nine related tables: orders, items, customers, products, sellers, payments, reviews, geolocation, and a category-name translation.
+- Dataset link: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+- ~100k orders (2016–2018) across nine related tables: orders, items, customers, products, sellers, payments, reviews, geolocation, and a category-name translation.
 
 The raw data is **not** included in this repo (Kaggle-licensed). To set it up locally:
 
-1. Download the dataset from the link above or use the Kaggle CLI: `kaggle datasets download -d olistbr/brazilian-ecommerce`
+1. Download the dataset from the link above or use the [Kaggle CLI](https://github.com/Kaggle/kaggle-cli): `kaggle datasets download -d olistbr/brazilian-ecommerce`
 2. Unzip the nine CSVs into a `data/` folder in the project root.
 
 ![Data Schema](images/data-schema.png)
