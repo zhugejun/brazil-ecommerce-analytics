@@ -16,7 +16,7 @@ prediction model on top.
 
 The raw data is **not** included in this repo (Kaggle-licensed). To set it up locally:
 
-1. Download the dataset from the link above.
+1. Download the dataset from the link above or use the Kaggle CLI: `kaggle datasets download -d olistbr/brazilian-ecommerce`
 2. Unzip the nine CSVs into a `data/` folder in the project root.
 
 ## Setup
