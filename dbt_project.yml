@@ -18,3 +18,6 @@ models:
   brazil_ecommerce_analytics:
     +materialized: view
 
+
+flags:
+  send_anonymous_usage_stats: false
