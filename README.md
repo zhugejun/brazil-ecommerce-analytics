@@ -19,6 +19,8 @@ The raw data is **not** included in this repo (Kaggle-licensed). To set it up lo
 1. Download the dataset from the link above or use the Kaggle CLI: `kaggle datasets download -d olistbr/brazilian-ecommerce`
 2. Unzip the nine CSVs into a `data/` folder in the project root.
 
+![Data Schema](images/data-schema.png)
+
 ## Setup
 
 Requires [uv](https://docs.astral.sh/uv/).
