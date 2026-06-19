@@ -29,12 +29,12 @@ uv sync
 
 ## Roadmap
 
-- [x] Project scaffold (uv + dbt + DuckDB)
+- [x] Project setup (uv + dbt + DuckDB)
 - [ ] Staging layer + data-quality tests
 - [ ] Dimensional models (dims, facts, customer 360)
 - [ ] Retention, delivery & satisfaction analytics
 - [ ] Late-delivery prediction model
-- [ ] Governed BI layer (MotherDuck → Lightdash / Power BI / Streamlit)
+- [ ] BI layer (MotherDuck → Lightdash / Power BI / Streamlit)
 - [ ] AI-footprint analysis capstone
 
 ---
