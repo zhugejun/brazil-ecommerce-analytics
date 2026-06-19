@@ -12,7 +12,11 @@ wheels/
 .venv
 data/
 *.duckdb
-dbt/target/
-dbt/logs/
 .env
 profiles.yml
+
+# dbt artifacts
+target/
+logs/
+dbt_packages/
+.user.yml
