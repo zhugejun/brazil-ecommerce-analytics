@@ -21,3 +21,20 @@ models:
         data_tests:
           - unique
           - not_null
+  
+  - name: stg_olist__orders
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+  
+  - name: stg_olist__order_items
+    columns:
+      - name: order_id
+      - name: order_item_id
+      - name: product_id
+      - name: seller_id
+      - name: shipping_limit_date
+      - name: price
+      - name: freight_value
