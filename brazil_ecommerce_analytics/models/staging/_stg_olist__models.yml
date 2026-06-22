@@ -32,8 +32,9 @@ models:
         data_tests:
           - not_null
           - relationships:
-              to: ref('stg_olist__customers')
-              field: customer_id
+              arguments:
+                to: ref('stg_olist__customers')
+                field: customer_id
   
   - name: stg_olist__order_items
     columns:
@@ -41,21 +42,24 @@ models:
         data_tests:
           - not_null
           - relationships:
-              to: ref('stg_olist__orders')
-              field: order_id
+              arguments:
+                to: ref('stg_olist__orders')
+                field: order_id
       - name: order_item_id
       - name: product_id
         data_tests:
           - not_null
           - relationships:
-              to: ref('stg_olist__products')
-              field: product_id
+              arguments:
+                to: ref('stg_olist__products')
+                field: product_id
       - name: seller_id
         data_tests:
           - not_null
           - relationships:
-              to: ref('stg_olist__sellers')
-              field: seller_id
+              arguments:
+                to: ref('stg_olist__sellers')
+                field: seller_id
       - name: shipping_limit_date
       - name: price
       - name: freight_value
