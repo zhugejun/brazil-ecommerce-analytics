@@ -37,6 +37,10 @@ models:
                 field: customer_id
   
   - name: stg_olist__order_items
+    # data_tests:
+    #   - dbt_utils.expression_is_true:
+    #       arguments:
+    #         expression: "price > 0"
     columns:
       - name: order_id
         data_tests:
@@ -62,4 +66,8 @@ models:
                 field: seller_id
       - name: shipping_limit_date
       - name: price
+        data_tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: "> 0"
       - name: freight_value
