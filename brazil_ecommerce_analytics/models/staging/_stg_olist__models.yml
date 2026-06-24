@@ -68,3 +68,23 @@ models:
           - dbt_utils.expression_is_true:
               arguments:
                 expression: "> 0"
+  
+  - name: stg_olist__payments
+    columns:
+      - name: order_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_olist__orders')
+                field: order_id
+
+  - name: stg_olist__reviews
+    columns:
+      - name: order_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_olist__orders')
+                field: order_id
