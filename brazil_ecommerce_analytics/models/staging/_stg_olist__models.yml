@@ -71,3 +71,8 @@ models:
               arguments:
                 expression: "> 0"
       - name: freight_value
+    
+  - name: stg_olist__category_name_translation
+    columns:
+      - name: product_category_name_portuguese
+      - name: product_category_name
