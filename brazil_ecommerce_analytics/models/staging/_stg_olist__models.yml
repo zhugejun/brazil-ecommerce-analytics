@@ -7,14 +7,6 @@ models:
         data_tests:
           - unique
           - not_null
-      - name: category_name_portuguese
-      - name: name_length
-      - name: description_length
-      - name: photos_qty
-      - name: weight_g
-      - name: length_cm
-      - name: height_cm
-      - name: width_cm
 
   - name: stg_olist__sellers
     columns: 
@@ -57,7 +49,6 @@ models:
               arguments:
                 to: ref('stg_olist__orders')
                 field: order_id
-      - name: order_item_id
       - name: product_id
         data_tests:
           - not_null
@@ -72,15 +63,8 @@ models:
               arguments:
                 to: ref('stg_olist__sellers')
                 field: seller_id
-      - name: shipping_limit_date
       - name: price
         data_tests:
           - dbt_utils.expression_is_true:
               arguments:
                 expression: "> 0"
-      - name: freight_value
-    
-  - name: stg_olist__category_name_translation
-    columns:
-      - name: category_name_portuguese
-      - name: category_name
