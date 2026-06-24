@@ -7,6 +7,14 @@ models:
         data_tests:
           - unique
           - not_null
+      - name: category_name_portuguese
+      - name: name_length
+      - name: description_length
+      - name: photos_qty
+      - name: weight_g
+      - name: length_cm
+      - name: height_cm
+      - name: width_cm
 
   - name: stg_olist__sellers
     columns: 
@@ -74,5 +82,5 @@ models:
     
   - name: stg_olist__category_name_translation
     columns:
-      - name: product_category_name_portuguese
-      - name: product_category_name
+      - name: category_name_portuguese
+      - name: category_name
