@@ -9,3 +9,10 @@ models:
           - not_null
       - name: total_price
         description: "Sum of item prices for the order (exclude freight)."
+  
+  - name: int_orders__delivery_timing
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
