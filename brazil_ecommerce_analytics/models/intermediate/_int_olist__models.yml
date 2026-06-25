@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_orders__items_aggregated
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: total_price
+        description: "Sum of item prices for the order (exclude freight)."
